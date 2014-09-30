@@ -19,15 +19,17 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/inbox', {
+        templateUrl: 'views/inbox.html',
+        controller: 'InboxCtrl',
+        controllerAs: 'inbox'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/inbox/email/:id', {
+        templateUrl: 'views/email.html',
+        controller: 'EmailCtrl',
+        controllerAs: 'email'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/inbox'
       });
   });
