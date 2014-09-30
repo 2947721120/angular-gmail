@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name angularGmailApp.controller:MainCtrl
+ * @name angularGmailApp.controller:InboxCtrl
  * @description
- * # MainCtrl
+ * # InboxCtrl
  * Controller of the angularGmailApp
  */
 angular.module('angularGmailApp')
